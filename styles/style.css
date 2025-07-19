@@ -13,13 +13,13 @@
     text-align: center;
     align-items: center;
 }
-body{
-    width: 80%;
+main, header{
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
 section{
-    margin-top: 100px;
+    margin-top: 90px;
 }
 .primary-text{
     color: #3A3A3A;
@@ -42,10 +42,17 @@ section{
 }
 .hero-bg{
     background-image: url(../images/Circle\ design.svg);
+    height: 500px;
+    width: 80%;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+#text-color{
+    color: #E02C6D;
 }
 /* header section */
 .brand{
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     font-weight: 700;
 }
 .nav-iteam{
@@ -67,8 +74,9 @@ nav li a:hover{
 }
 /* hero section */
 .hero{
-    gap: 70px;
+    gap: 100px;
     margin-top: 50px;
+    margin-bottom: 0px;
     
 }
 .hero-title{
@@ -80,18 +88,23 @@ nav li a:hover{
     font-weight: 600;
     font-size: 1rem;
     margin-top: 16px;
+    max-width: 510px;
 }
 .hero-image{
-    width: 60%;
+    width: 80%;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 70px;
 }
 
 /*  */
 .sponsor-company{
     display:grid;
     grid-template-columns: repeat(7, 1fr);
+    justify-content: space-between;
     max-width: 1110px;
+    margin-left: 40px;
     align-items: center;
-    margin-top: 100px;
 }
 /* product */
 .product-containt{
@@ -152,7 +165,31 @@ nav li a:hover{
     margin-top: 10px;
     max-width: 500px;
 }
-
+/* footer section */
+footer{
+    background-color: #0A0826;
+    padding: 0;
+}
+.footer-logo{
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 100px;
+    padding-top: 30px;
+}
+.footer-title{
+    color: white;
+    font-size: 0.75rem;
+    margin-top: 5px;
+    padding-top: 0px;
+}
+.icon{
+    filter: grayscale(100%);
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
 
 /* responsive style */
 @media screen and (max-width:576px){
@@ -169,6 +206,9 @@ nav li a:hover{
     .sponsor-company{
         grid-template-columns: repeat(3, 1fr);
         margin-top: 50px;
+        gap: 20px;
+        align-items: center;
+       
     }
     .product-container{
         grid-template-columns: repeat(1, 1fr);
@@ -181,21 +221,55 @@ nav li a:hover{
      .hero-title{
         margin-top: 0;
         font-size: 2rem;
+        text-align: center;
      }
-     nav{
-        align-items: center;
-        justify-content: center;
+     .hero-description{
+        text-align: center;
+     }
+     .hero-btn{
+        display: block;
+        margin: 0 auto;
+     }
+     nav ul{
+        padding: 0;
      }
      .sponsor-company{
         width: 30%;
         gap: 40px;
         justify-content: center;
      }
+     .hero{
+        flex-direction: column-reverse;
+     }
      .hero-image, .hero-bg{
-        display: none;
+        width: 100%;
+        height: auto;
+     }
+     .feature-container {
+        gap: 0;
      }
      .feature-image{
         width: 100%;
         height: auto;
      }
+     .frature-title{
+        margin-top: 0px;
+     }
+    .frature-title{
+     margin-top: 50px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:992px){
+     .product-container{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+    .feature-container
+    {
+        flex-direction: column;
+    }
+    footer{
+        width: 100%;
+    }
 }
