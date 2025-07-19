@@ -121,8 +121,8 @@ nav li a:hover{
 }
 .product-price{
     font-size: 1.55rem;
-    font-weight: 500;
-    margin-top: 6px;
+    font-weight: 400;
+    margin-top: 10px;
     margin-bottom: 0px;
 }
 .product-description{
@@ -136,14 +136,30 @@ nav li a:hover{
     border: none;
     text-align: left;  
 }
-
+/*  */
+.feature-container{
+    gap: 80px;
+    
+}
+.frature-title{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.frature-description{
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-top: 10px;
+    max-width: 500px;
+}
 
 
 /* responsive style */
 @media screen and (max-width:576px){
     .nav-iteam,
     .nav-container,
-    .hero
+    .hero,
+    .feature-container
     {
         flex-direction: column;
     }
@@ -177,5 +193,9 @@ nav li a:hover{
      }
      .hero-image, .hero-bg{
         display: none;
+     }
+     .feature-image{
+        width: 100%;
+        height: auto;
      }
 }
