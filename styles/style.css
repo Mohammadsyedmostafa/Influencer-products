@@ -211,16 +211,24 @@ body{
         gap: 40px;
         align-items: center;
         margin-left: 0;
-       
+
+    }
+    .product{
+        width: 92%;
     }
     .product-container{
        grid-template-columns: repeat(1, 1fr);
-        justify-content: center;
+       justify-content: center;
     }
-    /* body{
-        align-items: center;
-        justify-content: center;
-    } */
+    .product-image{
+        width: 100%;
+    }
+    body{
+        margin: 0;
+    }
+    section{
+        margin-top: 50px;
+    }
      .hero-title{
         margin-top: 0;
         font-size: 2rem;
@@ -236,6 +244,9 @@ body{
      nav ul{
         padding: 0;
      }
+     nav li{
+        text-align: center; 
+     }
      .sponsor-company{
         width: 30%;
         gap: 40px;
@@ -248,10 +259,10 @@ body{
      .hero-image{
         width: 100%;
         height: auto;
+        margin-top: 70px;
         margin-left: 0px;
      }
      .hero-bg{
-        /* height: 600px; */
         width: 100%;
         background-position: center;
 
@@ -267,7 +278,11 @@ body{
         margin-top: 0px;
      }
     .frature-title{
-     margin-top: 50px;
+     margin-top: 30px;
+    }
+    .footer-logo{
+        margin: 40px;
+        margin-bottom: 0px;
     }
 }
 
